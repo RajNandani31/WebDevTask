@@ -80,6 +80,7 @@ fetch('https://coding-week-2024-api.onrender.com/api/data').then((response)=>{
     abc.innerHTML+=`<p class="Author4">${data[4].author}<\p>`;
 
     
+
     var abc=document.querySelector(".Headline1_")
     abc.innerHTML+=`${data[3].headline}`;
     var abc=document.querySelector(".Date1")
@@ -100,6 +101,17 @@ fetch('https://coding-week-2024-api.onrender.com/api/data').then((response)=>{
     var abc=document.querySelector(".Date4")
     abc.innerHTML+=`${date_convert(data[7].date)}`;
 
+    var abc=document.querySelector(".Headline5_")
+    abc.innerHTML+=`${data[8].headline}`;
+    var abc=document.querySelector(".Date5")
+    abc.innerHTML+=`${date_convert(data[8].date)}`;
+
+    var abc=document.querySelector(".Headline6_")
+    abc.innerHTML+=`${data[9].headline}`;
+    var abc=document.querySelector(".Date6")
+    abc.innerHTML+=`${date_convert(data[9].date)}`;
+
+    
 
     const style=document.querySelector("style")
     style.innerHTML+=`.Image1{background-image: url(${data[0].image})}`;
@@ -110,6 +122,8 @@ fetch('https://coding-week-2024-api.onrender.com/api/data').then((response)=>{
     style.innerHTML+=`.img2{background-image: url(${data[5].image})}`;
     style.innerHTML+=`.img3{background-image: url(${data[6].image})}`;
     style.innerHTML+=`.img4{background-image: url(${data[7].image})}`;
+    style.innerHTML+=`.img5{background-image: url(${data[8].image})}`;
+    style.innerHTML+=`.img6{background-image: url(${data[9].image})}`;
     
 
     
@@ -118,5 +132,4 @@ fetch('https://coding-week-2024-api.onrender.com/api/data').then((response)=>{
 
     console.log('rejected',err);
 })
-
 

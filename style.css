@@ -14,6 +14,8 @@ body{
     grid-template-rows:2fr 1fr 1fr ;
    
 }
+
+
 .Title{
     background-image: repeating-linear-gradient(155deg,rgb(37, 35, 35) 80px,rgb(7,6,6) 150px );
     padding-left: 20px;
@@ -25,6 +27,8 @@ body{
     font-size: 45px;
     color: white;
     margin-top: 10px;
+    
+
 }
 .Title p::first-letter{
     font-size: 65px;
@@ -44,13 +48,6 @@ body{
     align-items: center;
     
 }
-.sports{
-    display: grid;
-    grid-template-columns:1fr 10px;
-}
-.Drop{
-    width:20px;
-}
 .current-page{
     background-color: black;
     color:white;
@@ -63,8 +60,14 @@ body{
     margin-left: 12PX;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
-
+.Top:hover{
+    background-color: rgb(76, 73, 73);
+    color: white;
+    cursor:pointer;
+    margin-top: 0%;
+    margin-bottom: 0px;
+    transition: 0.4s;
+}
 .SearchBar{
     width: 30px;
     justify-self: end;
@@ -153,7 +156,26 @@ body{
     position: relative;
     
 }
-
+.Image1:hover{
+    scale:1.02;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+.Image2:hover{
+    scale:1.02;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+.Image3:hover{
+    scale:1.02;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+.Image4:hover{
+    scale:1.02;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
 .Head1{
     color:white;
     position: absolute;
@@ -257,7 +279,7 @@ body{
     display:grid;
     grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr ;
     row-gap: 5px;
-    overflow:hidden;
+    overflow: scroll;
     overflow-x: hidden;
 }
 .Item1{
@@ -270,7 +292,12 @@ body{
     margin-top: 10px;
    
 }
-
+.Item1:hover{
+    color: lightgray;
+    scale: 1.02;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
 .Item2{
     display:grid;
     grid-template-columns: 1fr 2fr;
@@ -283,7 +310,12 @@ body{
   
    
 }
-
+.Item2:hover{
+    color: gray;
+    scale: 1.02;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
 .Item3{
     display:grid;
     grid-template-columns: 1fr 2fr;
@@ -296,7 +328,12 @@ body{
     
   
 }
-
+.Item3:hover{
+    color: gray;
+    scale: 1.02;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
 .Item4{
     display:grid;
     grid-template-columns: 1fr 2fr;
@@ -305,7 +342,55 @@ body{
     
     margin-bottom: 0px;
     margin-top: 10px;
+   
+  
+   
 }
+.Item4:hover{
+    color: gray;
+    scale: 1.02;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+.Item5{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    width:98%;
+    background-color: white;
+    
+    margin-bottom: 0px;
+    margin-top: 10px;
+   
+  
+    
+}
+.Item5:hover{
+    color: gray;
+    scale: 1.02;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+.Item6{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    width:98%;
+    background-color: white;
+    
+    margin-bottom: 0px;
+    margin-top: 10px;
+   
+  
+    
+}
+.Item6:hover{
+    color: gray;
+    scale: 1.02;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+
+
 .Latest{
      color: white;
      background-color: black;
@@ -324,6 +409,12 @@ body{
    font-size: 20px;
 
 }
+.Popular:hover{
+    color: white;
+    background-color: grey;
+}
+
+
 .Type1{
     text-align: center;
     background-color: black;
@@ -439,6 +530,9 @@ body{
     position: relative;
     margin-left: 25%;
     border-radius: 5px;
+ 
+   
+   
 }
 .img2{
     background-size: cover;
@@ -461,7 +555,20 @@ body{
     margin-left: 25%;
     border-radius: 5px;
 }
-
+.img5{
+    background-size: cover;
+    height:100%;
+    position: relative;
+    margin-left:  25%;
+    border-radius: 5px;
+}
+.img6{
+    background-size: cover;
+    height:100%;
+    position: relative;
+    margin-left:  25%;
+    border-radius: 5px;
+}
 .Headline1_{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
@@ -522,7 +629,36 @@ body{
      background-color: white;
      text-overflow: ellipsis;
 }
-
+.Headline5_{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    align-items: baseline;
+    margin-left: 4%;
+    margin-top: 0%;
+    margin-bottom: 5%;
+    display: -webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient: vertical;
+     overflow: hidden;
+     text-overflow: ellipsis;
+    opacity: 0.9;
+    background-color: white;
+}
+.Headline6_{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    align-items: baseline;
+    margin-left: 4%;
+    margin-top: 0%;
+    margin-bottom: 5%;
+    display: -webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient: vertical;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     background-color: white;
+    opacity: 0.9;
+}
 .Date1{
     color: black;
     opacity: 0.8;
@@ -559,7 +695,24 @@ body{
     margin-bottom: 0%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
+.Date5{
+    color: black;
+    opacity: 0.8;
+    margin-left: 0px;
+    font-size: 16px;
+    margin-top: 0px;
+    margin-bottom: 0%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.Date6{
+    color: black;
+    opacity: 0.8;
+    margin-left: 0px;
+    font-size: 16px;
+    margin-top: 0px;
+    margin-bottom: 0%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 .Calender_{
     position: absolute;
     width:20px;
@@ -587,7 +740,16 @@ body{
     margin-left: 4%;
     grid-template-columns: 20px 1fr;
 }
-
+.Date5_{
+    display: grid;
+    margin-left: 4%;
+    grid-template-columns: 20px 1fr;
+}
+.Date6_{
+    display: grid;
+    margin-left: 4%;
+    grid-template-columns: 20px 1fr;
+}
 .Author1_{
     color:white;
     position: absolute;
@@ -648,4 +810,11 @@ body{
     left:15%;
     position: absolute;
     font-weight: 100;
+}
+.sports{
+    display: grid;
+    grid-template-columns:1fr 10px;
+}
+.Drop{
+    width:20px;
 }
